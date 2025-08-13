@@ -1,36 +1,172 @@
+/* Container */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Background Grid */
 #bgGrid {
     position: fixed;
     will-change: transform;
     background-size: 2.5rem 2.5rem;
-    background-image: linear-gradient(90deg,rgba(0,0,0,.133) 1px,transparent 0),linear-gradient(180deg,rgba(5,5,5,.133) 1px,transparent 0);
-    z-index: -2
-
-}
-#bgGrid,#blurGrid {
+    background-image: linear-gradient(90deg,rgba(0,0,0,.08) 1px,transparent 0),linear-gradient(180deg,rgba(0,0,0,.08) 1px,transparent 0);
+    z-index: -2;
     inset: 0;
     height: 100vh;
 }
+
 #blurGrid {
-    background:radial-gradient(circle,hsla(0,8%,95%,.6) 0,hsla(0,11%,96%,.97) 90%,var(--background) 100%);
-    z-index:-1;
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    background: radial-gradient(circle,hsla(0,8%,95%,.6) 0,hsla(0,11%,96%,.97) 90%,var(--background) 100%);
+    z-index: -1;
 }
+
 @media screen and (max-width: 600px) {
     #bgGrid {
-        background-size:1.5rem 1.5rem
+        background-size: 1.5rem 1.5rem;
     }
 }
 
+/* Header Section */
+.headerSection {
+    padding: 4rem 2rem 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
 
+.headerContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-.cardContainer{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.pageTitle {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.pageSubtitle {
+    font-size: 1.2rem;
+    color: var(--slate-black);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Games Section */
+.gamesSection {
+    padding: 4rem 2rem;
+}
+
+.gamesGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 0 1rem;
+}
 
-    height: 50vh;
+/* Info Section */
+.infoSection {
+    padding: 4rem 2rem;
+    background: var(--black);
+    color: white;
+}
 
+.infoContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.infoContent h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.infoCard {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.infoCard:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.infoCard h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.infoCard p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .headerSection {
+        padding: 3rem 1rem 2rem;
+    }
+    
+    .gamesSection {
+        padding: 3rem 1rem;
+    }
+    
+    .gamesGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0;
+    }
+    
+    .infoSection {
+        padding: 3rem 1rem;
+    }
+    
+    .infoGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .infoCard {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pageTitle {
+        font-size: 2.5rem;
+    }
+    
+    .pageSubtitle {
+        font-size: 1.1rem;
+    }
+    
+    .infoContent h2 {
+        font-size: 2rem;
+    }
 }
