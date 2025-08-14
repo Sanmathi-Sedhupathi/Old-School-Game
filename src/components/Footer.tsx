@@ -11,7 +11,7 @@ export default function Footer() {
 				<div className={styles.newsletterBox}>
 					<h3>Subscribe to our Newsletter</h3>
 					<p>
-						Don’t miss out on the fun. Be the first to know about our new games,
+						Don't miss out on the fun. Be the first to know about our new games,
 						exclusive offers and more, straight into your inbox
 					</p>
 					<form className={styles.newsletterForm}>
@@ -24,16 +24,15 @@ export default function Footer() {
 			<div className={styles.footerWrapper}>
 				{/* Wave as background */}
 				<div className={styles.waveBackground}>
-	<Image
-		src={FooterWave}
-		alt="Footer Wave"
-		width={1920}
-		height={400}
-		className={styles.waveImage}
-		priority
-	/>
-</div>
-
+					<Image
+						src={FooterWave}
+						alt="Footer Wave"
+						width={1920}
+						height={400}
+						className={styles.waveImage}
+						priority
+					/>
+				</div>
 
 				{/* Actual Footer Section */}
 				<footer className={styles.footerContainer}>
@@ -45,14 +44,16 @@ export default function Footer() {
 
 						<div className={styles.footerLinks}>
 							<div>
-								<p>Games</p>
+								<p>Play Game</p>
 								<Link href="/game/tic-tac-toe/single-player">Tic Tac Toe</Link>
 								<Link href="/game/sudoku">Sudoku</Link>
+								<Link href="/game/memory-flip-card">Memory Flip</Link>
+								<Link href="/game/schulte-table">Schulte Table</Link>
 							</div>
 							<div>
-								<p>Resources</p>
+								<p>Contribution</p>
 								<Link href="https://github.com/ajaynegi45/Old-School-Game/issues">Issues</Link>
-								<Link href="https://github.com/ajaynegi45/Old-School-Game/blob/main/README.md">About Us</Link>
+								<Link href="https://github.com/ajaynegi45/Old-School-Game/blob/main/README.md">About us</Link>
 								<Link href="https://github.com/ajaynegi45/Old-School-Game">Contribution</Link>
 							</div>
 						</div>
