@@ -10,7 +10,7 @@ export default function Footer() {
 				<div className={styles.newsletterBox}>
 					<h3>Subscribe to our Newsletter</h3>
 					<p>
-						Don’t miss out on the fun. Be the first to know about our new games,
+						Don&apos;t miss out on the fun. Be the first to know about our new games,
 						exclusive offers, and more — straight to your inbox.
 					</p>
 					<form className={styles.newsletterForm}>
@@ -39,7 +39,7 @@ export default function Footer() {
 					<div className={styles.footerContent}>
 						<div className={styles.footerLeft}>
 							<h2>OLD SCHOOL GAMES</h2>
-							<p>Unlock Your Mind's Potential</p>
+							<p>Unlock Your Mind&apos;s Potential</p>
 						</div>
 
 						<div className={styles.footerLinks}>
@@ -60,7 +60,7 @@ export default function Footer() {
 					</div>
 
 					<p className={styles.copyright}>
-						© 2025 Old School Games. All Rights Reserved
+						&copy; 2025 Old School Games. All Rights Reserved
 					</p>
 				</footer>
 			</div>

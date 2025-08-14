@@ -76,8 +76,6 @@ export default function Home() {
 
 			{/* Games Section with Wave Background */}
 			<section className={styles.gamesSection}>
-
-
 				<div className={styles.gamesContent}>
 					<div className={styles.trendingGames}>
 						<h2 className={styles.sectionTitle}>Trending Games</h2>
@@ -98,8 +96,14 @@ export default function Home() {
 							<div className={styles.gameInfo}>
 								<h3 className={styles.gameTitle}>Tic-Tac-Toe Reimagined</h3>
 								<p className={styles.gameDescription}>
-									Tic-Tac-Toe isn't just for kids anymore! Dive into our elegant version of the age-old classic. Whether you're testing your memory, sharpening strategy, or just relaxing — it's a quick and clever workout for your brain. Play solo or with a friend!<br /><br />
-									<b>“Think you’ve mastered the grid? Prove it.”</b>
+									Tic-Tac-Toe isn&apos;t just for kids anymore! Dive into our
+									elegant version of the age-old classic. Whether you&apos;re
+									testing your memory, sharpening strategy, or just relaxing —
+									it&apos;s a quick and clever workout for your brain. Play solo
+									or with a friend!
+									<br />
+									<br />
+									<b>&ldquo;Think you&rsquo;ve mastered the grid? Prove it.&rdquo;</b>
 								</p>
 								<div className={styles.gameButtons}>
 									<Link
@@ -123,10 +127,13 @@ export default function Home() {
 							<div className={styles.gameInfo}>
 								<h3 className={styles.gameTitle}>Sudoku Games</h3>
 								<p className={styles.gameDescription}>
-									Dive into the world of logic and numbers. Our Sudoku is designed to sharpen your focus, test your problem-solving skills, and keep your brain engaged — all in a distraction-free, modern interface.
-									<br /><br />
-									<b>“Can you fill the grid without breaking a sweat?”</b>
-
+									Dive into the world of logic and numbers. Our Sudoku is
+									designed to sharpen your focus, test your problem-solving
+									skills, and keep your brain engaged — all in a distraction-free,
+									modern interface.
+									<br />
+									<br />
+									<b>&ldquo;Can you fill the grid without breaking a sweat?&rdquo;</b>
 								</p>
 								<div className={styles.gameButtons}>
 									<Link href="/game/sudoku" className={styles.playButton}>
@@ -158,8 +165,8 @@ export default function Home() {
 				<div className={styles.missionContent}>
 					<h2 className={styles.missionTitle}>Our Mission</h2>
 					<p className={styles.missionText}>
-						In today's fast-paced world of short-form content and instant
-						gratification, we're building a collection of thoughtful,
+						In today&apos;s fast-paced world of short-form content and instant
+						gratification, we&apos;re building a collection of thoughtful,
 						brain-training games that help you develop deep focus, improve
 						memory, and strengthen cognitive abilities.
 					</p>
@@ -235,7 +242,6 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-
 		</div>
 	);
 }
