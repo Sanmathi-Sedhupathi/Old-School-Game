@@ -6,23 +6,24 @@ import FooterWave from "/public/aasets/footer_wave.png";
 export default function Footer() {
 	return (
 		<>
-			{/* Newsletter stays outside the wave area */}
 			<section className={styles.newsletterSection}>
 				<div className={styles.newsletterBox}>
 					<h3>Subscribe to our Newsletter</h3>
 					<p>
-						Don't miss out on the fun. Be the first to know about our new games,
-						exclusive offers and more, straight into your inbox
+						Don’t miss out on the fun. Be the first to know about our new games,
+						exclusive offers, and more — straight to your inbox.
 					</p>
 					<form className={styles.newsletterForm}>
 						<input type="email" placeholder="Enter Email Address" required />
 						<button type="submit">Subscribe</button>
 					</form>
+					<p className={styles.privacyNote}>
+						Your privacy is important. I never share your email.
+					</p>
 				</div>
 			</section>
 
 			<div className={styles.footerWrapper}>
-				{/* Wave as background */}
 				<div className={styles.waveBackground}>
 					<Image
 						src={FooterWave}
@@ -34,7 +35,6 @@ export default function Footer() {
 					/>
 				</div>
 
-				{/* Actual Footer Section */}
 				<footer className={styles.footerContainer}>
 					<div className={styles.footerContent}>
 						<div className={styles.footerLeft}>
@@ -47,13 +47,13 @@ export default function Footer() {
 								<p>Play Game</p>
 								<Link href="/game/tic-tac-toe/single-player">Tic Tac Toe</Link>
 								<Link href="/game/sudoku">Sudoku</Link>
-								<Link href="/game/memory-flip-card">Memory Flip</Link>
-								<Link href="/game/schulte-table">Schulte Table</Link>
+								<Link href="https://ajaynegi.web.app/contact/">Contact Us</Link>
+								<Link href="/contact">Contact Page</Link>
 							</div>
 							<div>
 								<p>Contribution</p>
 								<Link href="https://github.com/ajaynegi45/Old-School-Game/issues">Issues</Link>
-								<Link href="https://github.com/ajaynegi45/Old-School-Game/blob/main/README.md">About us</Link>
+								<Link href="https://github.com/ajaynegi45/Old-School-Game/blob/main/README.md">About Us</Link>
 								<Link href="https://github.com/ajaynegi45/Old-School-Game">Contribution</Link>
 							</div>
 						</div>
