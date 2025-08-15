@@ -1,7 +1,7 @@
 import styles from "./footer.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import FooterWave from "/public/aasets/footer_wave.png";
+import FooterWave from "/public/assets/footer_wave.png";
 
 export default function Footer() {
 	return (

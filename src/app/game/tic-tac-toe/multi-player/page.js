@@ -1,6 +1,5 @@
 "use client";
-
-import {useState, useEffect} from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import io from 'socket.io-client';
 import styles from "./page.module.css";
@@ -78,7 +77,7 @@ const Game = () => {
             socket.off('resetGame');
             socket.off('error');
         };
-    }, []);
+    }, [reset]);
 
     const handleClick = (index) => {
         if (!currentGame) {
@@ -107,13 +106,13 @@ const Game = () => {
     };
 
 
-    const reset = (isUserInitiated = true) => {
+    const reset = useCallback((isUserInitiated = true) => {
         setBoard(Array(9).fill(null));
         setIsXNext(true);
         if (isUserInitiated) {
             socket.emit('resetGame', currentGame);
         }
-    };
+    }, [currentGame]);
 
     const handleCreateGame = () => {
         setMySymbol('X');

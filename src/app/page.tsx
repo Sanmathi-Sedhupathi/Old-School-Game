@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import HeroImage from "/public/aasets/hero.png";
-import CurveImage from "/public/aasets/curve.png";
-import TicTacToeImage from "/public/aasets/tic-tac-toe.png";
-import SudokuImage from "/public/aasets/sudoku.png";
+import HeroImage from "/public/assets/hero.png";
+import CurveImage from "/public/assets/curve.png";
+import TicTacToeImage from "/public/assets/tic-tac-toe.png";
+import SudokuImage from "/public/assets/sudoku.png";
 import styles from "./page.module.css";
 
 const faqs = [

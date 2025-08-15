@@ -10,6 +10,7 @@ type CardProps = {
     link: string;
     backgroundColor: string;
     textColor?:string;
+    description: string;
 }
 
 const Card = (props: CardProps) => {
